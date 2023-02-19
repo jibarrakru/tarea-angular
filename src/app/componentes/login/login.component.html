@@ -1,0 +1,21 @@
+<div class="container text-center">
+    <div class="card-body">
+        <img src="assets/img/spiderman.png" alt="login_img" width="100" height="130">
+        <h5 class="card-title display-6">{{titulo}}</h5>
+        <form class="main-container">
+            <div>
+                <label for="email">Email</label>
+                <div>
+                    <input type="text" class="form-control" name="email" [(ngModel)]="usuario.email">
+                </div>
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <div>
+                    <input type="password" class="form-control" name="password" [(ngModel)]="usuario.password">
+                </div>
+            </div>
+            <button class="btn btn-success main-container" role="button" (click)="login()">LogIn</button>
+        </form>
+    </div>    
+</div>
