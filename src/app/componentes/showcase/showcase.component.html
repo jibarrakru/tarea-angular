@@ -3,12 +3,12 @@
 </div>
 
 <ul class="row row-cols-1 row-cols-md-3 g-4 main-container">
-  <li *ngFor="let prod of productos">
-    <app-card [itemChild]="prod"></app-card>    
+  <li *ngFor="let producto of productos">
+    <app-card [producto]="producto"></app-card>    
     <!-- Button trigger modal -->
-    <button (click)="pasarItem(prod)" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    <button (click)="pasarItem(producto)" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
       <i class="bi bi-cart-fill"></i>
     </button>
   </li>
-  <app-modal [producto]="item"></app-modal>
+  <app-modal [producto]="productoSeleccionado"></app-modal>
 </ul>

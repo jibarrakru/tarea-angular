@@ -10,7 +10,7 @@ import { ProductoService } from '../producto/producto.service';
 export class ShowcaseComponent implements OnInit {
   
   productos: Producto[] = [];
-  item: Producto = new Producto();
+  productoSeleccionado: Producto = new Producto();
 
   constructor( private productoService: ProductoService ) { }
 
@@ -22,7 +22,7 @@ export class ShowcaseComponent implements OnInit {
 
   pasarItem(producto: Producto) {
     console.log('Producto: ' + producto.id);    
-    this.item = producto;
+    this.productoSeleccionado = producto;
   }
 
 }
