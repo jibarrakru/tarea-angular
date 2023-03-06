@@ -18,6 +18,7 @@ import { MenuComponent } from './componentes/menu/menu.component';
 import { LoginComponent } from './componentes/login/login.component';
 import { ShowcaseComponent } from './componentes/showcase/showcase.component';
 import { ModalComponent } from './componentes/shared/modal/modal.component';
+import { CardComponent } from './componentes/shared/card/card.component';
 
 // Servicios
 
@@ -32,7 +33,8 @@ import { ModalComponent } from './componentes/shared/modal/modal.component';
     MenuComponent,
     LoginComponent,
     ShowcaseComponent,
-    ModalComponent
+    ModalComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,

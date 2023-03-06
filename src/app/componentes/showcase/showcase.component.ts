@@ -1,7 +1,6 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Producto } from '../producto/producto';
 import { ProductoService } from '../producto/producto.service';
-import { ModalComponent } from '../shared/modal/modal.component';
 
 @Component({
   selector: 'app-showcase',
