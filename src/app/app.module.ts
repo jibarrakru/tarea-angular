@@ -19,6 +19,7 @@ import { LoginComponent } from './componentes/login/login.component';
 import { ShowcaseComponent } from './componentes/showcase/showcase.component';
 import { ModalComponent } from './componentes/shared/modal/modal.component';
 import { CardComponent } from './componentes/shared/card/card.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 // Servicios
 
@@ -40,7 +41,8 @@ import { CardComponent } from './componentes/shared/card/card.component';
     BrowserModule,
     HttpClientModule,
     FormsModule,
-    APP_ROUTING
+    APP_ROUTING,
+    BrowserAnimationsModule
     // RouterModule.forRoot(routes)
   ],
   providers: [],
